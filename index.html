@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mental Health Assessment</h1>
+    </header>
+    <main>
+        <form id="mentalHealthForm" onsubmit="return submitForm();">
+            <h2>Question 1: How often do you feel sad or unhappy?</h2>
+            <input type="radio" id="q1-1" name="q1" value="1">
+            <label for="q1-1">Almost never</label><br>
+            <input type="radio" id="q1-2" name="q1" value="2">
+            <label for="q1-2">Several days</label><br>
+            <input type="radio" id="q1-3" name="q1" value="3">
+            <label for="q1-3">More than half the days</label><br>
+            <input type="radio" id="q1-4" name="q1" value="4">
+            <label for="q1-4">Nearly every day</label><br>
+
+            <!-- Include other questions similarly -->
+            <h2>Question 2: Feeling down, depressed or hopeless?</h2>
+            <input type="radio" id="q2-1" name="q2" value="1">
+            <label for="q2-1">Almost never</label><br>
+            <input type="radio" id="q2-2" name="q2" value="2">
+            <label for="q2-2">Several days</label><br>
+            <input type="radio" id="q2-3" name="q2" value="3">
+            <label for="q2-3">More than half the days</label><br>
+            <input type="radio" id="q2-4" name="q2" value="4">
+            <label for="q2-4">Nearly every day</label><br>
+            
+
+            <h2>Question 3: Do you feel overwhelmed or inadequate?</h2>
+            <input type="radio" id="q3-1" name="q3" value="1">
+            <label for="q3-1">Almost never</label><br>
+            <input type="radio" id="q3-2" name="q3" value="2">
+            <label for="q3-2">Several days</label><br>
+            <input type="radio" id="q3-3" name="q3" value="3">
+            <label for="q3-3">More than half the days</label><br>
+            <input type="radio" id="q3-4" name="q3" value="4">
+            <label for="q3-4">Nearly every day</label><br>
+          
+
+            <h2>Question 4: Trouble falling or staying asleep, or sleeping too much?</h2>
+            <input type="radio" id="q4-1" name="q4" value="1">
+            <label for="q4-1">Almost never</label><br>
+            <input type="radio" id="q4-2" name="q4" value="2">
+            <label for="q4-2">Several days</label><br>
+            <input type="radio" id="q4-3" name="q4" value="3">
+            <label for="q4-3">More than half the days</label><br>
+            <input type="radio" id="q4-4" name="q4" value="4">
+            <label for="q4-4">Nearly every day</label><br>
+            
+
+            <h2>Question 5: Feeling bad about yourself  or that you are a failure or have let yourself or your family down?</h2>
+            <input type="radio" id="q5-1" name="q5" value="1">
+            <label for="q5-1">Almost never</label><br>
+            <input type="radio" id="q5-2" name="q5" value="2">
+            <label for="q5-2">Several days</label><br>
+            <input type="radio" id="q5-3" name="q5" value="3">
+            <label for="q5-3">More than half the days</label><br>
+            <input type="radio" id="q5-4" name="q5" value="4">
+            <label for="q5-4">Nearly every day</label><br>
+            
+
+            <h2>Question 6: Trouble concentrating on things, such as reading the newspaper or watching television?</h2>
+            <input type="radio" id="q6-1" name="q6" value="1">
+            <label for="q6-1">Almost never</label><br>
+            <input type="radio" id="q6-2" name="q6" value="2">
+            <label for="q6-2">Several days</label><br>
+            <input type="radio" id="q6-3" name="q6" value="3">
+            <label for="q6-3">More than half the days</label><br>
+            <input type="radio" id="q6-4" name="q6" value="4">
+            <label for="q6-4">Nearly every day</label><br>
+            
+
+            <h2>Question 7: Little interest or pleasure in doing things?</h2>
+            <input type="radio" id="q7-1" name="q7" value="1">
+            <label for="q7-1">Almost never</label><br>
+            <input type="radio" id="q7-2" name="q7" value="2">
+            <label for="q7-2">Several days</label><br>
+            <input type="radio" id="q7-3" name="q7" value="3">
+            <label for="q7-3">More than half the days</label><br>
+            <input type="radio" id="q7-4" name="q7" value="4">
+            <label for="q7-4">Nearly every day</label><br>
+           
+            <h2>Question 8: Thoughts that you would be better off dead, or of hurting yourself?</h2>
+            <input type="radio" id="q8-1" name="q8" value="1">
+            <label for="q8-1">Almost never</label><br>
+            <input type="radio" id="q8-2" name="q8" value="2">
+            <label for="q8-2">Several days</label><br>
+            <input type="radio" id="q8-3" name="q8" value="3">
+            <label for="q8-3">More than half the days</label><br>
+            <input type="radio" id="q8-4" name="q8" value="4">
+            <label for="q8-4">Nearly every day</label><br>
+            
+
+            <h2>Question 9: Is there a feeling of restlessness or irritability often?</h2>
+            <input type="radio" id="q9-1" name="q9" value="1">
+            <label for="q9-1">Almost never</label><br>
+            <input type="radio" id="q9-2" name="q9" value="2">
+            <label for="q9-2">Several days</label><br>
+            <input type="radio" id="q9-3" name="q9" value="3">
+            <label for="q9-3">More than half the days</label><br>
+            <input type="radio" id="q9-4" name="q9" value="4">
+            <label for="q9-4">Nearly every day</label><br>
+            
+
+            <h2>Question 10: How often has your mental health affected your relationships?</h2>
+            <input type="radio" id="q10-1" name="q10" value="1">
+            <label for="q10-1">Almost never</label><br>
+            <input type="radio" id="q10-2" name="q10" value="2">
+            <label for="q10-2">Several days</label><br>
+            <input type="radio" id="q10-3" name="q10" value="3">
+            <label for="q10-3">More than half the days</label><br>
+            <input type="radio" id="q10-4" name="q10" value="4">
+            <label for="q10-4">Nearly every day</label><br>
+            
+
+            <h2>Question 11: Have you ever been diagnosed with a mental disorder before?</h2>
+            <input type="radio" id="q11-1" name="q11" value="1">
+            <label for="q11-1">Almost never</label><br>
+            <input type="radio" id="q11-2" name="q11" value="2">
+            <label for="q11-2">Several days</label><br>
+            <input type="radio" id="q11-3" name="q11" value="3">
+            <label for="q11-3">More than half the days</label><br>
+            <input type="radio" id="q11-4" name="q11" value="4">
+            <label for="q11-4">Nearly every day</label><br>
+            
+
+            <h2>Question 12: Do you feel guilty about something most of the time?</h2>
+            <input type="radio" id="q12-1" name="q12" value="1">
+            <label for="q12-1">Almost never</label><br>
+            <input type="radio" id="q12-2" name="q12" value="2">
+            <label for="q12-2">Several days</label><br>
+            <input type="radio" id="q12-3" name="q12" value="3">
+            <label for="q12-3">More than half the days</label><br>
+            <input type="radio" id="q12-4" name="q12" value="4">
+            <label for="q12-4">Nearly every day</label><br>
+            
+
+
+            <h2>Question 13: Do you feel like you're being punished?</h2>
+            <input type="radio" id="q13-1" name="q13" value="1">
+            <label for="q13-1">Almost never</label><br>
+            <input type="radio" id="q13-2" name="q13" value="2">
+            <label for="q13-2">Several days</label><br>
+            <input type="radio" id="q13-3" name="q13" value="3">
+            <label for="q13-3">More than half the days</label><br>
+            <input type="radio" id="q13-4" name="q13" value="4">
+            <label for="q13-4">Nearly every day</label><br>
+
+
+            <h2>Question 14: I am often on the brink of tears or cry?</h2>
+            <input type="radio" id="q14-1" name="q14" value="1">
+            <label for="q14-1">Almost never</label><br>
+            <input type="radio" id="q14-2" name="q14" value="2">
+            <label for="q14-2">Several days</label><br>
+            <input type="radio" id="q14-3" name="q14" value="3">
+            <label for="q14-3">More than half the days</label><br>
+            <input type="radio" id="q14-4" name="q14" value="4">
+            <label for="q14-4">Nearly every day</label><br>
+
+
+            <h2>Question 15: Are you interested in other people's lives and like to listen to them?</h2>
+            <input type="radio" id="q15-1" name="q15" value="1">
+            <label for="q15-1">Almost never</label><br>
+            <input type="radio" id="q15-2" name="q15" value="2">
+            <label for="q15-2">Several days</label><br>
+            <input type="radio" id="q15-3" name="q15" value="3">
+            <label for="q15-3">More than half the days</label><br>
+            <input type="radio" id="q15-4" name="q15" value="4">
+            <label for="q15-4">Nearly every day</label><br>
+
+
+            <button type="submit" class="pulse-button">Submit</button>
+        </form>
+        <div id="results"></div>
+    </main>
+    <script src="script.js" defer></script>
+    <script>
+        function submitForm() {
+            // Calculate the score based on the user's answers
+            // For simplicity, let's assume score calculation here
+            var score = 0;
+            // Assuming each question has 4 options
+            for (var i = 1; i <= 15; i++) {
+                var selectedOption = document.querySelector('input[name="q'+i+'"]:checked');
+                if (selectedOption) {
+                    score += parseInt(selectedOption.value);
+                }
+            }
+            // Redirect the user to a new page with the results and score
+            window.location.href = "results.html?score=" + score;
+            return false;
+        }
+    </script>
+</body>
+</html>
